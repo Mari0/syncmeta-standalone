@@ -8,11 +8,11 @@ define([
     'MoveTool',
     'generic/NodeTool',
     'generic/EdgeTool',
-    'text!../../templates/circle_node.html',
-    'text!../../templates/diamond_node.html',
-    'text!../../templates/rectangle_node.html',
-    'text!../../templates/rounded_rectangle_node.html',
-    'text!../../templates/triangle_node.html'
+    'text!../templates/circle_node.html',
+    'text!../templates/diamond_node.html',
+    'text!../templates/rectangle_node.html',
+    'text!../templates/rounded_rectangle_node.html',
+    'text!../templates/triangle_node.html'
 ],/** @lends Palette */function($,_,ToolSelectOperation,SetViewTypesOperation,InitModelTypesOperation,MoveTool,NodeTool, EdgeTool, circleNodeHtml,diamondNodeHtml,rectangleNodeHtml,roundedRectangleNodeHtml,triangleNodeHtml) {
 
     /**

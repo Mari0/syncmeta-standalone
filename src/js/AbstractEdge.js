@@ -10,8 +10,8 @@ define([
     'HistoryManager',
     'AbstractEntity',
     'attribute/SingleValueAttribute',
-    'text!../../templates/abstract_edge.html',
-    'text!../../templates/attribute/abstract_edge2.html'
+    'text!../templates/abstract_edge.html',
+    'text!../templates/attribute/abstract_edge2.html'
 ],/** @lends AbstractEdge */function (require, $, jsPlumb, _, Util, EdgeDeleteOperation, ActivityOperation, HistoryManager, AbstractEntity, SingleValueAttribute, abstractEdgeHtml, abstractEdgeBrowserHtml) {
 
     AbstractEdge.prototype = new AbstractEntity();

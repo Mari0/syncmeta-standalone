@@ -13,8 +13,8 @@ define([
     'AbstractEntity',
     'attribute/SingleValueAttribute',
     'HistoryManager',
-    'text!../../templates/abstract_node.html',
-    'text!../../templates/awareness_trace.html',
+    'text!../templates/abstract_node.html',
+    'text!../templates/awareness_trace.html',
     'jquery.transformable-PATCHED'
 ],/** @lends AbstractNode */function (require, $, jsPlumb, _, Util, NodeDeleteOperation, NodeMoveOperation, NodeMoveZOperation, NodeResizeOperation, ActivityOperation, AbstractEntity, SingleValueAttribute, HistoryManager, abstractNodeHtml, awarenessTraceHtml) {
 

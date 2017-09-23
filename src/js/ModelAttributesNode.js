@@ -10,7 +10,7 @@ define([
     'attribute/SingleValueAttribute',
     'attribute/SingleSelectionAttribute',
     'attribute/SingleMultiLineValueAttribute',
-    'text!../../templates/model_attributes_node.html'
+    'text!../templates/model_attributes_node.html'
 ],/** @lends ModelAttributesNode */function ($, jsPlumb, _, AbstractNode, BooleanAttribute, IntegerAttribute, FileAttribute, SingleValueAttribute, SingleSelectionAttribute, SingleMultiLineValueAttribute, modelAttributesNodeHtml) {
 
     ModelAttributesNode.TYPE = "ModelAttributesNode";
