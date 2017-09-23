@@ -1,5 +1,5 @@
 var require = {
-    baseUrl: "http://localhost:8082/js",
+    baseUrl: "https://rwth-acis.github.io/syncmeta-standalone/html/js",
     waitSeconds: 0,
     shim: {
         iwc: {

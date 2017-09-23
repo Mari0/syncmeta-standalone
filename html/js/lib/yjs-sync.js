@@ -15,7 +15,7 @@ define(['jquery', 'Util'], function($, Util) {
             connector: {
                 name: "websockets-client", // use the websockets connector
                 room: spaceTitle,
-                url:""
+                url:"http://yjs.dbis.rwth-aachen.de:5081"
             },
             share: { // specify the shared content
                 users: 'Map',
@@ -32,7 +32,7 @@ define(['jquery', 'Util'], function($, Util) {
                 text:"Text"
             },
             type:["Text","Map"],
-            sourceDir: 'http://localhost:8082/js/lib/vendor'
+            sourceDir: 'https://rwth-acis.github.io/syncmeta-standalone/html/js/lib/vendor'
         }).then(function(y) {   
             deferred.resolve(y);
         });

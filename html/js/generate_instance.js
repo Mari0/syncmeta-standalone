@@ -20,7 +20,7 @@ requirejs([
         function generateSpace(spaceLabel, spaceTitle) {
 
             function createSpace(spaceLabel, spaceTitle) {
-                var url = "http://127.0.0.1:8073/spaces/" + spaceLabel;
+                var url = "http://role-sandbox.eu/spaces/" + spaceLabel;
                 var deferred = $.Deferred();
                 var innerDeferred = $.Deferred();
 
@@ -38,7 +38,7 @@ requirejs([
                 //Create space
                 innerDeferred.then(function() {
                     openapp.resource.post(
-                        "http://127.0.0.1:8073/spaces",
+                        "http://role-sandbox.eu/spaces",
                         function(data) {
                             deferred.resolve(data.uri);
                         }, {
@@ -184,15 +184,15 @@ requirejs([
 
             return createSpace(spaceLabel, spaceTitle)
                 .then(function(spaceURI) {
-                    return addWidgetToSpace(spaceURI, "http://localhost:8082/activity.xml")
+                    return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/activity.xml")
                         .then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/widget.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/widget.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/palette.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/palette.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/attribute.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/attribute.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/debug.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/debug.xml");
                         }).then(function() {
                             var deferred = $.Deferred();
                             var viewpoints = y.share.views.keys();
@@ -219,11 +219,11 @@ requirejs([
                             return deferred.promise();
                         })
                         .then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/viewcontrol.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/viewcontrol.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/heatmap.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/heatmap.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "http://localhost:8082/guidance.xml");
+                            return addWidgetToSpace(spaceURI, "https://rwth-acis.github.io/syncmeta-standalone/html/guidance.xml");
                         }).then(function() {
                             return {
                                 spaceURI: spaceURI,
@@ -291,7 +291,7 @@ requirejs([
                 clearTimeout(timeout);
                 timeout = setTimeout(function() {
                     $this.addClass('loading_button');
-                    var url = "http://127.0.0.1:8073/spaces/" + $this.val().replace(/[^a-zA-Z]/g, "").toLowerCase();
+                    var url = "http://role-sandbox.eu/spaces/" + $this.val().replace(/[^a-zA-Z]/g, "").toLowerCase();
                     openapp.resource.get(url, function(data) {
                         if (data.uri === url) { //Space already exists
                             if (data.data[data.subject['http://purl.org/openapp/owner'][0].value]['http://www.w3.org/2002/07/owl#sameAs'][0].value === openapp.param.user()) {

@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl:"http://localhost:8082/js",
+    baseUrl:"https://rwth-acis.github.io/syncmeta-standalone/html/js",
     paths: {
         chai : "lib/vendor/test/chai",
         mocha:'lib/vendor/test/mocha',
