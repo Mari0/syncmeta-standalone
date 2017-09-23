@@ -15,7 +15,7 @@ define(['jquery', 'Util'], function($, Util) {
             connector: {
                 name: "websockets-client", // use the websockets connector
                 room: spaceTitle,
-                url:"http://yjs.dbis.rwth-aachen.de:5081"
+                url:"https://yjs.dbis.rwth-aachen.de:5081"
             },
             share: { // specify the shared content
                 users: 'Map',
