@@ -1,7 +1,7 @@
 /* global define */
 define(['jqueryui',
     'lodash',
-    'text!../../templates/palette/abstract_tool.html'],
+    'text!../templates/palette/abstract_tool.html'],
     /** @lends AbstractCanvasTool */function ($,_,abstractToolHtml) {
 
     //noinspection JSUnusedGlobalSymbols
