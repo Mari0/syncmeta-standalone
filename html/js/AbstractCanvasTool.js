@@ -63,7 +63,7 @@ define(['jqueryui',
          * @type {jQuery}
          * @private
          */
-        var _$node = $(_.template(abstractToolHtml,{icon: _icon instanceof $ || !_icon ? "" : "https://rwth-acis.github.io/syncmeta-standalone/html/img/"+_icon, label: _name, color: _color}));
+        var _$node = $(_.template(abstractToolHtml,{icon: _icon instanceof $ || !_icon ? "" : "https://mario.github.io/syncmeta-standalone/html/img/"+_icon, label: _name, color: _color}));
         if(_icon instanceof $){
             _$node.find(".icon").empty().append(_icon);
 }
