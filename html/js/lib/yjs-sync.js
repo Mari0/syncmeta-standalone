@@ -32,7 +32,7 @@ define(['jquery', 'Util'], function($, Util) {
                 text:"Text"
             },
             type:["Text","Map"],
-            sourceDir: 'https://mario.github.io/syncmeta-standalone/html/js/lib/vendor'
+            sourceDir: 'https://mari0.github.io/syncmeta-standalone/html/js/lib/vendor'
         }).then(function(y) {   
             deferred.resolve(y);
         });

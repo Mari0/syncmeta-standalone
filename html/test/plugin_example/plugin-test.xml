@@ -61,10 +61,10 @@
     <style>
      #eventList{max-height: 400px; overflow: auto;}
     </style>
-    <script src="https://mario.github.io/syncmeta-standalone/html/js/lib/vendor/require.js"></script>    
-    <script src="https://mario.github.io/syncmeta-standalone/html/js/lib/vendor/jquery.js""></script>
-    <script src="https://mario.github.io/syncmeta-standalone/html/plugin/syncmeta-plugin.js"></script>
-    <script src="https://mario.github.io/syncmeta-standalone/html/test/plugin_example/syncmeta-plugin-test.js"></script>
+    <script src="https://mari0.github.io/syncmeta-standalone/html/js/lib/vendor/require.js"></script>    
+    <script src="https://mari0.github.io/syncmeta-standalone/html/js/lib/vendor/jquery.js""></script>
+    <script src="https://mari0.github.io/syncmeta-standalone/html/plugin/syncmeta-plugin.js"></script>
+    <script src="https://mari0.github.io/syncmeta-standalone/html/test/plugin_example/syncmeta-plugin-test.js"></script>
     <button id="modelAttr" >Set ModelAttribute values </button>
     <br>
     <ul id="eventList"></ul>

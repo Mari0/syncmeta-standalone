@@ -184,15 +184,15 @@ requirejs([
 
             return createSpace(spaceLabel, spaceTitle)
                 .then(function(spaceURI) {
-                    return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/activity.xml")
+                    return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/activity.xml")
                         .then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/widget.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/widget.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/palette.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/palette.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/attribute.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/attribute.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/debug.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/debug.xml");
                         }).then(function() {
                             var deferred = $.Deferred();
                             var viewpoints = y.share.views.keys();
@@ -219,11 +219,11 @@ requirejs([
                             return deferred.promise();
                         })
                         .then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/viewcontrol.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/viewcontrol.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/heatmap.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/heatmap.xml");
                         }).then(function() {
-                            return addWidgetToSpace(spaceURI, "https://mario.github.io/syncmeta-standalone/html/guidance.xml");
+                            return addWidgetToSpace(spaceURI, "https://mari0.github.io/syncmeta-standalone/html/guidance.xml");
                         }).then(function() {
                             return {
                                 spaceURI: spaceURI,

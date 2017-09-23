@@ -1,5 +1,5 @@
 requirejs.config({
-    baseUrl:"https://mario.github.io/syncmeta-standalone/html/js",
+    baseUrl:"https://mari0.github.io/syncmeta-standalone/html/js",
     paths: {
         chai : "lib/vendor/test/chai",
         mocha:'lib/vendor/test/mocha',
